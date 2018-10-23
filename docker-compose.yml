@@ -1,0 +1,25 @@
+version: '2'
+
+services:
+  nginx-proxy:
+    image: jwilder/nginx-proxy
+    container_name: nginx-proxy
+    ports:
+      - "80"
+    volumes:
+      - /etc/nginx/vhost.d
+      - /usr/share/nginx/html
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+  flask-app:
+    container_name: flask-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: flask-server-image
+    ports:
+      - "80:80"
+    environment:
+      - VIRTUAL_HOST=flare.jacktimmins.com
+    depends_on:
+      - nginx-proxy
+    command: python3 app.py
