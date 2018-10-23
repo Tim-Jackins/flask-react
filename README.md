@@ -1,9 +1,9 @@
 # Flask React
 
-![banner]()
 
-![badge]()
-![badge]()
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?longCache=true&style=flat-square)](https://github.com/RichardLitt/standard-readme)
+[![pep8 compliant](https://img.shields.io/badge/code%20style-PEP8-ff69b4.svg?longCache=true&style=flat-square)](https://www.python.org/dev/peps/pep-0008/)
+[![GitHub license](https://img.shields.io/github/license/Tim-Jackins/slackbot-template.svg?longCache=true&style=flat-square)](https://github.com/Tim-Jackins/slackbot-template/blob/master/LICENSE)
 
 > This is an example file with maximal choices selected.
 
