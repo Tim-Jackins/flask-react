@@ -1,13 +1,10 @@
 # Flask React
 
-
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?longCache=true&style=flat-square)](https://github.com/RichardLitt/standard-readme)
 [![pep8 compliant](https://img.shields.io/badge/code%20style-PEP8-ff69b4.svg?longCache=true&style=flat-square)](https://www.python.org/dev/peps/pep-0008/)
 [![GitHub license](https://img.shields.io/github/license/Tim-Jackins/slackbot-template.svg?longCache=true&style=flat-square)](https://github.com/Tim-Jackins/slackbot-template/blob/master/LICENSE)
 
-> This is an example file with maximal choices selected.
-
-This is a long description.
+> A example app for making a flask-react app and serving over https.
 
 ## Table of Contents
 
@@ -15,13 +12,12 @@ This is a long description.
 - [Background](#background)
 - [Install](#install)
 - [Usage](#usage)
-- [API](#api)
 - [Contribute](#contribute)
 - [License](#license)
 
 ## Security
 
-This will serve your flask-react app over http so be careful sending sensitive info. If you are interested in serving over https I recommend you look at [JrCs](https://github.com/JrCs)'s [Let's Encrypt helper container](https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion).
+The `ssl-helper` container will allow you to serve the app over https but you should make sure to run flask in [production mode](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwjspaaOwP_eAhXI1lkKHfAyCRcQFjAAegQICBAB&url=http%3A%2F%2Fflask.pocoo.org%2Fdocs%2F1.0%2Ftutorial%2Fdeploy%2F&usg=AOvVaw1zxSFWTq2To7-E2PNQgiVT).
 
 ## Background
 
@@ -69,7 +65,7 @@ This file is where you're going to keep your "secrets" (API keys, passwords, con
 
 Next go to your domain and make an A record named apptest that points to your server's IP.
 
-Finally, go into `docker-compose.yml` and change `example.com` on line 22 to `apptest.yourdomain.com`.
+Finally, go into `docker-compose.yml` and change it according to comments.
 
 ## Usage
 
