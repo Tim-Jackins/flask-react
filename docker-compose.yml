@@ -45,7 +45,7 @@ services:
       - ssl-helper
     networks:
       - sample-net
-    command: python3 progress.py
+    command: python3 app.py
 
 networks:
   sample-net:
