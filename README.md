@@ -32,7 +32,7 @@ First [install npm](https://www.taniarascia.com/how-to-install-and-use-node-js-a
 Then use npm to install npx:
 
 ```bash
-npm i npx
+npm install npx
 ```
 
 Now clone this repo to your server:
