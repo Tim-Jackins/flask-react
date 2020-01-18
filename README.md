@@ -87,4 +87,4 @@ Small note: If editing the Readme, please conform to the [standard-readme](https
 
 ## License
 
-[MIT © Jack Timmins.](../LICENSE)
+[GPL v3 © Jack Timmins.](../LICENSE)
